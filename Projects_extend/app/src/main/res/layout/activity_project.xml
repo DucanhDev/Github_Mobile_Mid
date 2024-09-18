@@ -46,7 +46,7 @@
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:text="Pull Requests"
+            android:text="Projects"
             android:textColor="@color/dark_white"
             android:textSize="35sp" />
 
@@ -85,47 +85,20 @@
 
                 <!-- Filter Buttons -->
                 <Button
+                    android:id="@+id/filterAllprojects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill_button"
+                    android:text="All projetcs"
+                    android:textColor="@color/light_gray" />
+
+                <Button
                     android:id="@+id/filterOpen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:background="@drawable/pill_button"
                     android:text="Open"
-                    android:textColor="@color/light_gray" />
-
-                <Button
-                    android:id="@+id/filterCreatedByMe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/pill_button"
-                    android:text="Created by me"
-                    android:textColor="@color/light_gray" />
-
-                <Button
-                    android:id="@+id/filterVisibility"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/pill_button"
-                    android:text="Visibility"
-                    android:textColor="@color/light_gray" />
-
-                <Button
-                    android:id="@+id/filterOrganization"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/pill_button"
-                    android:text="Organization"
-                    android:textColor="@color/light_gray" />
-
-                <Button
-                    android:id="@+id/filterRepository"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/pill_button"
-                    android:text="Repository"
                     android:textColor="@color/light_gray" />
 
                 <Button
@@ -134,8 +107,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/pill_button"
-                    android:text="Sort: Newest"
+                    android:text="Sort:Most recently viewed"
                     android:textColor="@color/light_gray" />
+
 
             </LinearLayout>
         </HorizontalScrollView>
@@ -169,14 +143,13 @@
 
             <!-- Instructions -->
             <TextView
-                android:id="@+id/no_pullrequests_text"
+                android:id="@+id/no_project_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="No pull request found"
+                android:text="There aren't any projects."
                 android:textColor="#FFFFFF"
                 android:textSize="22sp" />
-
             <TextView
                 android:id="@+id/instruction_text"
                 android:layout_width="wrap_content"
